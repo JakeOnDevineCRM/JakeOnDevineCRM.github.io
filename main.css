@@ -1,0 +1,80 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    display: none;
+    flex-direction: column;
+    background-color: #373637;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: left;
+}
+.sidebar a:hover {
+    background-color: #292829;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+
+.content {
+    margin-left: 0;
+    width: 100%;
+    transition: margin-left 0.3s;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+footer{
+    padding: 10px;
+}
+
+#meettheteam { background-color: #6c91b5; }
+#month1 { background-color: #9277a6; }
+#month2 { background-color: #bca74c; }
+#month3 { background-color: #cd4c27;}
+#header {
+    max-height: 250px;
+}

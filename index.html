@@ -3,47 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake's On Devine CRM</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Capstone Group 2 - Jake's on Devine Custom POS System</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
     <div class="container">
-        <h1>Jake's On Devine CRM</h1>
-        <p>Official Page of Jake's On Devine CRM.</p>
-
-        <div class="section">
-            <h2>Latest Updates</h2>
-            <p><strong>Set up routes, login page, and main page!</strong></p>
-            Mockup of inventory page:
-            <p><img src="images/inventory_mockup.png" alt="mockup of inventory page" width="100%"></p>
-        </div>
-
-        <div class="section">
-            <h2>Meet the Team</h2>
-            <p>Developed by Thien Ngoc, Brady Collins, Amy Schiffler, and Javier Torres</p>
-        </div>
-
+    <nav class="sidebar" id="sidebar">
+        <a href="#meettheteam" onclick="toggleMenu()">Meet The Team</a>
+        <a href="#month1" onclick="toggleMenu()">Month 1</a>
+        <a href="#month2" onclick="toggleMenu()">Month 2</a>
+    </nav>
+    <div class="content" id="content">
+        <section id="header">
+            <h1>Jake's on Devine Custom POS System</h1><br>
+            <p>Update page for Capstone 491 Group 2. Monthly updates will go here. View a live demo <a href="jakecrm.onrender.com">here</a>!</p>
+            <h3>COMING SOON:</h3>
+            <ul>
+                <li>Trend tracking</li>
+                <li>Full database integration</li>
+                <li>Updated pages (Inventory History, Trends, etc)</li>
+                <li>Implementing cronjobs</li>
+                <li>Updating style sheets</li>
+                <li>Bugfixes</li>
+            </ul>
+        </section>
+        <section id="month1">
+            <h1>Month 1: January 22nd-February 10th</h1>
+            <ul>
+                <li>Jan 20th-24th: Met to establish line of communication</li> 
+                <li>Jan 27th-31st: Created documentation and began sprint planning</li>
+                <li>Feb 5th: Met with client to discuss requirements</li>
+            </ul>
+            <p>Mockup of inventory page:</p>
+            <img src="images/inventory_mockup.png" alt ="Mockup of inventory page" width="95%">
+            <p>Trello board from early February:</p>
+            <img src="images/february16_trello.png" alt ="Trello Board" width="95%">
+        </section>
+        <section id="month2">
+            <h1>Month 2: February 11th-March 10th</h1>
+            <ul>
+                <li>Feb 10th-14th: Began creating basic pages and database based on shared schema</li>
+                <li>Feb 12th: Met with Group 8 to discuss shared database</li>
+                <li>Feb 19th: Met with client to update on database research and progress</li>
+                <li>Feb 20th-Mar 7th: Continued development on databases and updating pages to reflect design</li>
+            </ul>
+            <p>Trello board from early March:</p>
+            <img src="images/march10_trello.png" alt ="Trello board in March" width="95%">
+            <p>Original home page:</p>
+            <img src="images/website_original.png" alt ="Home page in early March" width="95%">
+            <p>Inventory demo:</p>
+            <img src="images/demo.gif" alt ="Database demo" width="95%">
+        </section>
+        <section id="meettheteam">
+            <h1>Meet the Team</h1>
+            <p>Amy Schiffler: Front End Developer & Team Lead</p>
+            <p>Javier Torres: Front End Developer & Team Lead</p>
+            <p>Thien Ngoc Tran: Back End Developer</p>
+            <p>Brady Collins: Database Developer</p>
+        </section>
     </div>
+    <script src="index.js"></script>
+    </div>
+
+    <footer>Last updated: 3/10/25</footer>
 </body>
 </html>
